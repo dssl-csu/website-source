@@ -33,7 +33,7 @@ publishDir = "../dssl-csu.github.io"
 
 	# Add links to your accounts. Remove the ones you don't want to include.
 	# Main
-	email = "dssl.csu@gmail.com"
+	email = "https://mailto:dssl.csu@gmail.com"
 
 	# Programming
   github = "https://github.com/dssl-csu"

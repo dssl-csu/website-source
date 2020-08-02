@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 <h1 class="post-title">{{ .Title }}</h1>
-    {{ if .Date }}
-    <time>{{ .Date.Format "January 2, 2006" }}</time>
+    {{ if .Params.talkdate }}
+    <time>{{ dateFormat "January 2, 2006" .Params.talkdate }}</time>
     {{ end }}
     <div>
         <p>

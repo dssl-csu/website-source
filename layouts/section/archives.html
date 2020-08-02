@@ -6,7 +6,8 @@
   <div>
      <!-- Group all the post pages from the same year -->
       {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-      {{ $pages := where $pages "Date" ">" (time "1970-01-01") }}
+
+      {{ $pages := where $pages "Date" ">" ( time "1970-01-01" ) }}
       
       {{ range ($pages.GroupByDate "2006")}}
           <h3>{{ .Key }}</h3> <!-- Display the year -->
@@ -15,7 +16,7 @@
               {{ range (.Pages) }}
                   
                   <li class="archives-list-item">
-                    <span class="archives-list-item-date">{{ .PublishDate.Format "Jan 2" }}</span>
+                    <span class="archives-list-item-date">{{ dateFormat "Jan 2" .Date }}</span>
                     <span>
                       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </span>

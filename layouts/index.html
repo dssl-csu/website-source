@@ -7,7 +7,9 @@
         {{ end }}
         <!-- Range over the pages and only include the ones that are a post type -->
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-        {{ range where (.Paginate $pages).Pages "Date" ">=" now}}
+        {{ $pages := where $pages "Date" "ge" now }}
+        
+        {{ range (.Paginate $pages).Pages }}
         <article>
             <h2>
                 <a href="{{ .Permalink }}">
@@ -26,7 +28,7 @@
                 {{ end }}
             </div>
             <div class="post-footer">
-            <time>{{ .Date.Format "January 2, 2006" }}</time>
+            <time>{{ dateFormat "January 2, 2006" .Date }}</time>
 
             <!-- Display tags -->
             {{if .Params.tags}}
