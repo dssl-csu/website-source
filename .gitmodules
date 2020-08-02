@@ -1,0 +1,3 @@
+[submodule "content/topics"]
+	path = content/topics
+	url = git@github.com:dssl-csu/topics.git
