@@ -1,8 +1,17 @@
 {{ define "main" }}
 
 <h1 class="post-title">{{ .Title }}</h1>
-    {{ if .Params.talkdate }}
-    <time>{{ dateFormat "January 2, 2006" .Params.talkdate }}</time>
+    {{ if .Params.date }}
+    <time>{{ dateFormat "January 2, 2006" .Params.date }}</time>
+    {{ end }}
+    {{if .Params.paper}}
+        {{ range .Params.paper }}
+            <a class="tag" href="{{ . | urlize }}" target="_blank">Paper</a>
+        {{ end }}
+    {{ end }}
+    
+    {{if .Params.slides}}
+        <a class="tag" href="{{ .Params.slides | urlize }}" target="_blank">Slides</a>
     {{ end }}
     <div>
         <p>

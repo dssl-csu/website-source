@@ -1,3 +1,6 @@
 [submodule "content/topics"]
 	path = content/topics
 	url = git@github.com:dssl-csu/topics.git
+[submodule "static/slides"]
+	path = static/slides
+	url = git@github.com:dssl-csu/slides

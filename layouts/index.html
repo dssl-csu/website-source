@@ -7,7 +7,7 @@
         {{ end }}
         <!-- Range over the pages and only include the ones that are a post type -->
         {{ $pages := where site.RegularPages "Type" "in" site.Params.mainSections }}
-        {{ $pages := where $pages "Date" "ge" now }}
+        {{ $pages := where $pages "Date" "ge" (now.AddDate 0 0 -1) }}
         
         {{ range (.Paginate $pages).Pages }}
         <article>
@@ -44,7 +44,7 @@
             {{ end }}
             
             {{if .Params.slides}}
-                <a class="tag" href="{{ . | urlize }}" target="_blank">Slides</a>
+                <a class="tag" href="{{ .Params.slides | urlize }}" target="_blank">Slides</a>
             {{ end }}
             </div> 
            

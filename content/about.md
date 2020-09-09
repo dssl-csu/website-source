@@ -11,12 +11,12 @@ At the beginning of each semester, together with all participants, we will selec
 
 ## How to Join
 
-To accommodate the current pndemic situation, we will use Zoom to meet weekly. Each meeting will last for approximately one hour.
+To accommodate the current pandemic situation, we will use Zoom to meet weekly. Each meeting will last for approximately one hour.
 
-* Meeting times: TBD
-* Zoom link: TBD
+* Meeting times: Wednesdays at 4pm
+* Zoom link: See e-mail
 
-For a password to join the meeting, please send an e-mail to dssl.csu@gmail.com with subject "Zoom Password for Weekly Meeting".
+For a link to join the meeting, please send an e-mail to dssl.csu@gmail.com with subject "Zoom Password for Weekly Meeting".
 
 
 
