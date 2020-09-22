@@ -39,7 +39,13 @@
             
             {{if .Params.paper}}
                 {{ range .Params.paper }}
-                    <a class="tag" href="{{ . | urlize }}" target="_blank">Paper</a>
+                    <a class="tag" href="{{ . }}" target="_blank">Paper</a>
+                {{ end }}
+            {{ end }}
+            
+            {{if .Params.supplement}}
+                {{ range .Params.supplement }}
+                    <a class="tag" href="{{ . }}" target="_blank">Supplemental</a>
                 {{ end }}
             {{ end }}
             
